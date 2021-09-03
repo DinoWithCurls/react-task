@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container {
+  width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-image: url(./images/img.jpg);
 }
-
-.App-link {
-  color: #61dafb;
+.app-wrapper {
+  background-color: white;
+  min-width: 500px;
+  min-height: 500px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  color: tomato;
+  text-align: center;
+  background-color: white;
+}
+.firstname,
+.lastname,
+.email,
+.password {
+  margin: 20px;
+  color:darkblue;
+  font-size: 15px;
+}
+.password {
+  margin-bottom: 40px;
+}
+.input {
+  height:32px;
+  font-size:20px;
+  outline: none;
+  width:100%;
+  border-top-style:none;
+  border-left-style:none;
+  border-right-style: none;
+  border-bottom-style: 2px solid black;
+  margin-bottom:10px;
+  background-color: white;
+}
+.error {
+  color:tomato;
+  background: white;
+  background-color: white;
+}
+.submit{
+  display: flex;
+  text-transform: uppercase;
+  font-size:20px;
+  width:500px;
+  border-radius:5px;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  padding:10px 60px;
+  background: linear-gradient(to left, #4b79a1, #283e51);
+  margin-top:90px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+button:active{
+  transform: translateY(2px);
+}
+.form-success{
+  display: flex;
+  justify-content: center;
+  margin-top:250px;
+  min-width:370px;
+  color:white;
+}
+.form-wrapper{
+  background: white;
+}
+.submit-wrapper{
+  background:white;
+}
+.text-block{
+  padding: 60px;
+}
+.caption {
+  color:white;
+  margin-left: 90px;
+  font-family: 'Roboto', sans-serif;
+  font-size:50px;
+}
+.smallcaption {
+  color:white;
+  margin-left: 90px;
+  font-family: 'Roboto', sans-serif;
+  font-size:15px;
+}
+.terms {
+  font-family: 'Roboto', sans-serif;
+  font-size:15px;
+  color:grey;
+  margin-top: 15px;
+}
+.termsbox {
+  font-family: 'Roboto', sans-serif;
+  font-size:15px;
+  color:red;
+  margin-top: 15px;
 }
